@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Shop</title>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/mainstyle.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top p-3">
+                <div class="container-fluid">
+                    <a href="" class="navbar-brand flipY fw-bold">
+                        Coffee Shop
+                    </a>
+                    <div class="option ">
+                        <button type="button" id="cart-btn" class="btn position-relative
+                            text-white">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span class="position-absolute top-0 start-100
+                                translate-middle badge bg-danger">3</span>
+                        </button>
+                        <div class="cart-items-container">
+                            <div class="cart-item">
+                                <span class="fas fa-times"></span>
+                                <img src="assets/images/cart-item-1.png" alt="">
+                                <div class="content">
+                                    <h3>cart item 01</h3>
+                                    <div class="price">$15.99/-</div>
+                                </div>
+                            </div>
+                            <div class="cart-item">
+                                <span class="fas fa-times"></span>
+                                <img src="assets/images/cart-item-2.png" alt="">
+                                <div class="content">
+                                    <h3>cart item 02</h3>
+                                    <div class="price">$15.99/-</div>
+                                </div>
+                            </div>
+                            <div class="cart-item">
+                                <span class="fas fa-times"></span>
+                                <img src="assets/images/cart-item-3.png" alt="">
+                                <div class="content">
+                                    <h3>cart item 03</h3>
+                                    <div class="price">$15.99/-</div>
+                                </div>
+                            </div>
+                            <button href="#" class="cart-btn up ">checkout now</button>
+                        </div>
+                        <button type="button" id="search-btn" class="btn position-relative
+                            text-white">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        <div class="search-form">
+                            <input type="search" id="search-box" placeholder="search here...">
+                        </div>
+
+
+                    </div>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navMenu">
+                        <ul class="nav navbar-nav ms-auto text-center">
+                            <li class="nav-item p-2 ">
+                                <a id="len1" class="nav-link hoverable text-light text-glow " href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item p-2">
+                                <a id="len2" class="nav-link hoverable text-light text-glow "
+                                    href="index.html#our-story">About</a>
+                            </li>
+                            <li class="nav-item p-2">
+                                <a id="len3" class="nav-link hoverable text-light text-glow " href="shop.html">Shop</a>
+                            </li>
+                            <li class="nav-item p-2">
+                                <a id="len4" class="nav-link hoverable text-light text-glow "
+                                    href="index.html#special">Special</a>
+                            </li>
+                            <li class="nav-item p-2">
+                                <a id="len5" class="nav-link hoverable text-light text-glow" href="index.html#contact">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <!-- Button trigger modal -->
+                                <button class="py-2 fill " data-bs-toggle="modal" data-bs-target="#login">
+                                    Log in
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel ">Sign
+                            in</h5>
+                        <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <aside>
+                            <form action="">
+                                <div class="form-custom">
+                                    <input type="text" placeholder="User
+                                            Name" required>
+                                    <input type="password" placeholder="Pass
+                                            word" required>
+                                </div>
+                                <button type="submit" class="fill">Send</button>
+                            </form>
+                        </aside>
+                    </div>
+                    <div class="modal-footer">
+                        <p>Not Yet Registered? <button class="fill">Sign up</button> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+  
+</header>
+<main>
+    <section class="shop_title" id="title">
+        
+    <div class="container-fluid pt-5">
+
+        <div class="row pb-3 d-flex flex-wrap">
+            <div class="col-12 pb-1">
+                <div class="container-fluid text-white">
+                    <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 300px">
+                        <h1 class="font-weight-semi-bold text-uppercase mb-3 text-glow">Our Shop</h1>
+                        <div class="d-inline-flex">
+                            <p class="m-0"><a href="index.html">Home</a></p>
+                            <p class="m-0 px-2">-</p>
+                            <p class="m-0">Shop</p>
+   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <div class="position-relative float-end mt-2 p-2">
+        <form action="">
+            <label for="" class="fa fa-search text-white"></label>
+            <input type="search" placeholder="Search here">
+        </form>
+    </div>
+    <section id="our-shop" class="our-shop mt-5">
+        
+        
+        <div class="container reveal">
+            
+            <div class="card-group mt-3 ">
+                <div class="card mx-2 text-center text-white bg-dark">
+                  <img class="card-img-top" src="/assets/images/menu-1.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <button class="raise">Buy </button>
+                  </div>
+                </div>
+                <div class="card mx-2 text-center text-white bg-dark">
+                    <img class="card-img-top" src="/assets/images/menu-1.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <button class="raise">Buy </button>
+                    </div>
+                  </div>
+                  <div class="card mx-2 text-center text-white bg-dark">
+                    <img class="card-img-top" src="/assets/images/menu-1.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <button class="raise">Buy </button>
+                    </div>
+                  </div>
+            </div>
+            
+            <div class="card-group mt-3 ">
+                <div class="card mx-2 text-center text-white bg-dark">
+                  <img class="card-img-top" src="/assets/images/menu-1.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <button class="raise">Buy </button>
+                  </div>
+                </div>
+                <div class="card mx-2 text-center text-white bg-dark">
+                    <img class="card-img-top" src="/assets/images/menu-1.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <button class="raise">Buy </button>
+                    </div>
+                  </div>
+                  <div class="card mx-2 text-center text-white bg-dark">
+                    <img class="card-img-top" src="/assets/images/menu-1.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <button class="raise">Buy </button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+</main>
+    
+
+
+
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-muted reveal text-white">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block text-white">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div class="text-white">
+                <a href="" class="me-4 text-reset hoverable">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset hoverable">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset hoverable">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset hoverable">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset hoverable">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 text-reset hoverable">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3 text-white">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4 footer-brand">
+                            <p href="" class=" navbar-brand display-1">Coffee shop</p>
+                        </h6>
+                        <p>
+                            Lorem ipsum dolor sit amet <br>
+                            consectetur adipisicing elit.</p>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4 text-white">
+                            Special Products
+                        </h6>
+                        <p>
+                            <a href="index.html#peru" class="text-white hoverable">Peru</a>
+                        </p>
+                        <p>
+                            <a href="index.html#columbia" class="text-white hoverable">Columbia</a>
+                        </p>
+                        <p>
+                            <a href="index.html#nicaragua" class="text-white hoverable">nicaragua</a>
+                        </p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4 text-white">
+                            Useful shorcuts
+                        </h6>
+                        <p>
+                            <a href="index.html#our-story" class="text-white hoverable">Our story</a>
+                        </p>
+                        <p>
+                            <a href="index.html#menu" class="text-white hoverable">our menu</a>
+                        </p>
+                        <p>
+                            <a href="shop.html" class="text-white hoverable">shop</a>
+                        </p>
+                        <p>
+                            <a href="index.html#feature" class="text-white hoverable">feature</a>
+                        </p>
+                        <p>
+                            <a href="index.html#contact" class="text-white hoverable">contact</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-white">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4 text-white">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> Japan, kanagawa, Yokohama</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            vudinhhoang2know@gmail.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4 text-white" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2022 Copyright:
+            <a class="text-reset fw-bold" href="http://gict.xsrv.jp/v_dinhhoang/my_portfolio/">Vu Dinh Hoang</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+    <!-- jquery -->
+    <script src="assets/js/jquery-3.6.0.js"></script>
+    <!-- isotope js -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- bootstrap js -->
+    <script src="assets/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!-- custom js -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
